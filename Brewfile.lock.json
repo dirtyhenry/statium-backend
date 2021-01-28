@@ -1,0 +1,22 @@
+{
+  "entries": {
+    "brew": {
+      "vapor": {
+        "version": "18.0.0",
+        "bottle": false
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "2.6.2-41-gd73fc48",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "ebce44828401d204f407d96a04c21f5fd14859d8",
+        "CLT": "",
+        "Xcode": "12.0",
+        "macOS": "10.15.6"
+      }
+    }
+  }
+}

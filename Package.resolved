@@ -74,6 +74,15 @@
         }
       },
       {
+        "package": "multipart-kit",
+        "repositoryURL": "https://github.com/vapor/multipart-kit.git",
+        "state": {
+          "branch": null,
+          "revision": "82f255699b1de9ba1f34dfc6b99e99aba5a1f8eb",
+          "version": "4.5.0"
+        }
+      },
+      {
         "package": "postgres-kit",
         "repositoryURL": "https://github.com/vapor/postgres-kit.git",
         "state": {
@@ -195,8 +204,8 @@
         "repositoryURL": "https://github.com/vapor/vapor.git",
         "state": {
           "branch": null,
-          "revision": "5148f02e42149f73f6616452062cf96b64afbda6",
-          "version": "4.36.2"
+          "revision": "8ee22de2845af389b9ed0e24f63983a0b5da6ab9",
+          "version": "4.49.0"
         }
       },
       {

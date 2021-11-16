@@ -1,2 +1,0 @@
-# Vapor requirements
-brew "vapor"

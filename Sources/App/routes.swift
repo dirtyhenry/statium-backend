@@ -13,22 +13,10 @@ func routes(_ app: Application) throws {
         "Hello, world!"
     }
 
-    app.get("ics-test") { _ in
-        FoundWrapper(location: "https://mfhosting.s3.amazonaws.com/test-method-publish.ics")
-    }
-}
-
-struct FoundWrapper {
-    let location: String
-}
-
-extension FoundWrapper: ResponseEncodable {
-    public func encodeResponse(for request: Request)
-        -> EventLoopFuture<Response> {
-        var headers = HTTPHeaders()
-        headers.add(name: .location, value: location)
-        return request.eventLoop.makeSucceededFuture(.init(
-            status: .found, headers: headers
-        ))
+    app.get("ics-test") { req in
+        req.redirect(
+            to: "https://mfhosting.s3.amazonaws.com/test-method-publish.ics",
+            type: .normal // 303 See Other
+        )
     }
 }
